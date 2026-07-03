@@ -74,6 +74,7 @@ local function centerText(text, y)
 end
 ---@param title string 
 ---@param options table
+---@return number
 local function quickMenu(title, options)
     clear()
     print("--- " .. title .. " ---\n")
@@ -87,7 +88,7 @@ local function quickMenu(title, options)
         local num = tonumber(character)
         
         if num and num >= 1 and num <= #options then
-            return num, options[num]
+            return options[num]
         end
     end
 end
@@ -146,6 +147,7 @@ end
 ---@param float number
 ---@param float2 number
 ---@param decimals number?
+---@return number
 ---Generates a random float between 2 floats and can be rounded down
 local function randomFloat(float, float2, decimals)
     local raw_random = float + math.random() * (float2 - float)
@@ -160,6 +162,7 @@ local function randomFloat(float, float2, decimals)
 end
 ---@param float number
 ---@param decimals number
+---@return number|nil
 ---Rounds down a float to a specified amount of decimals
 local function roundDownFloat(float, decimals)
     -- this code is taked from randomFloat lol
