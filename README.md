@@ -1,3 +1,12 @@
+# How to install
+
+To install someutils, run `wget https://raw.githubusercontent.com/GlitchGod42/someutils-cc/refs/heads/main/someutils.lua someutils`
+
+To install the someutils example, run `wget https://raw.githubusercontent.com/GlitchGod42/someutils-cc/refs/heads/main/someutilstest.lua someutilstest.lua`
+
+
+
+
 # Someutils documentation
 
 a library that has a bunch of random stuff... because WHY NOT!
