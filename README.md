@@ -93,7 +93,7 @@ Make some quick menus which can be useful sometimes yk
 **Example**
 
 ```lua
-local su = require(someutils)
+local su = require("someutils")
 local menu = su.quickMenu("Test Menu", {"Option 1", "Option 2", "Option 3"})
 
 if menu == 1 then
