@@ -19,6 +19,8 @@ a library that has a bunch of random stuff... because WHY NOT!
 - [su.centerText(text, y)](#sucentertexttext-y)
 - [su.quickMenu(title, options)](#suquickmenutitle-options)
 - [su.waitForKey(message)](#suwaitforkeymessage)
+- [su.confirmationPrompt(message)](#suconfirmationpromptmessage)
+- [su.countdownTimer(seconds, message)](#sucountdowntimerseconds-message)
 - [su.quickReadFile(path)](#suquickreadfilepath)
 - [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
 - [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
@@ -138,6 +140,16 @@ If message is nil then the message will default to "Are you sure?"
 **Returns**
 
 1. **option : boolean** The selected option
+
+## su.countdownTimer(seconds, message)
+
+Counts down `seconds` while printing
+
+If `message` is nil then the message will default to "Resuming In "
+
+**Parameters**
+
+1. **seconds : number** How many seconds to wait
 
 ## su.quickReadFile(path)
 

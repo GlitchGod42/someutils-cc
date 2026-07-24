@@ -38,6 +38,7 @@ else
     print("you picked no")
 end
 print()
+su.countdownTimer(3)
 print("writing hi to file")
 su.quickWriteFile("test.txt", "hi")
 sleep(0.1)

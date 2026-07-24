@@ -110,6 +110,18 @@ local function confirmationPrompt(message)
        end
     end
 end
+---@param seconds number
+---@param message string?
+local function countdownTimer(seconds, message)
+    term.write(message or "Resuming in ")
+    i = seconds
+    sleep(0.25)
+    while i >= 0 do
+        term.write(i .. "... ")
+        i = i - 1
+        sleep(1)
+    end
+end
 --file stuff
 ---@param path string
 ---@return string|nil
@@ -230,5 +242,6 @@ return {
     centerText = centerText, 
     quickMenu = quickMenu, 
     waitForKey = waitForKey, 
-    confirmationPrompt = confirmationPrompt
+    confirmationPrompt = confirmationPrompt, 
+    countdownTimer = countdownTimer
 }
