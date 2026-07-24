@@ -18,6 +18,7 @@ a library that has a bunch of random stuff... because WHY NOT!
 - [su.overwriteLine(text, y)](#suoverwritelinetext-y)
 - [su.centerText(text, y)](#sucentertexttext-y)
 - [su.quickMenu(title, options)](#suquickmenutitle-options)
+- [su.waitForKey(message)](#suwaitforkeymessage)
 - [su.quickReadFile(path)](#suquickreadfilepath)
 - [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
 - [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
@@ -113,6 +114,30 @@ elseif menu == 3 then
     print("Option 3 was selected!")
 end
 ```
+
+## su.waitForKey(message)
+
+Wait for a key with a custom message
+
+If message is nil then the message will default to "Press any key to continue..."
+
+**Parameters**
+
+1. <abbr title="optional">***message : string***</abbr> The custom message to print
+
+## su.confirmationPrompt(message)
+
+Its a confirmation prompt what did you expect just look at the function
+
+If message is nil then the message will default to "Are you sure?"
+
+**Parameters**
+
+1. <abbr title="optional">***message : string***</abbr> The custom message to print
+
+**Returns**
+
+1. **option : boolean** The selected option
 
 ## su.quickReadFile(path)
 

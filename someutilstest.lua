@@ -30,7 +30,13 @@ elseif menu == 2 then
 elseif menu == 3 then
     print("Option 3 was selected!")
 end
-
+su.waitForKey()
+local selection = su.confirmationPrompt()
+if selection == true then
+    print("you picked yes")
+else
+    print("you picked no")
+end
 print()
 print("writing hi to file")
 su.quickWriteFile("test.txt", "hi")

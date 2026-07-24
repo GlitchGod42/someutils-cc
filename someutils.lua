@@ -92,7 +92,24 @@ local function quickMenu(title, options)
         end
     end
 end
-
+---@param message string?
+local function waitForKey(message)
+    print(message or "Press any key to continue...")
+    os.pullEvent("key")
+end
+---@param message string?
+---@return boolean
+local function confirmationPrompt(message)
+    print((message or "Are you sure?") .. "(y/n)")
+    while true do
+        local _, key = os.pullEvent("key")
+        if key == keys.y then
+            return true
+        elseif key == keys.n then
+            return false
+       end
+    end
+end
 --file stuff
 ---@param path string
 ---@return string|nil
@@ -211,5 +228,7 @@ return {
     chance = chance, 
     formatInt = formatInt,
     centerText = centerText, 
-    quickMenu = quickMenu
+    quickMenu = quickMenu, 
+    waitForKey = waitForKey, 
+    confirmationPrompt = confirmationPrompt
 }
