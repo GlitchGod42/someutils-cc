@@ -1,4 +1,4 @@
-# How to install
+# How to install <!-- omit from toc -->
 
 To install someutils, run `wget https://raw.githubusercontent.com/GlitchGod42/someutils-cc/refs/heads/main/someutils.lua someutils`
 
@@ -7,33 +7,29 @@ To install the someutils example, run `wget https://raw.githubusercontent.com/Gl
 ###### also i suck at making documentation
 
 
-# Someutils documentation
+# Someutils documentation <!-- omit from toc -->
 
 a library that has a bunch of random stuff... because WHY NOT!
 
-## Table of Contents
-- [How to install](#how-to-install)
-        - [also i suck at making documentation](#also-i-suck-at-making-documentation)
-- [Someutils documentation](#someutils-documentation)
-  - [Table of Contents](#table-of-contents)
-  - [su.decimalToHexadecimal(number)](#sudecimaltohexadecimalnumber)
-  - [su.decimalToBinary(number)](#sudecimaltobinarynumber)
-  - [su.clear(x, y)](#suclearx-y)
-  - [su.overwriteLine(text, y)](#suoverwritelinetext-y)
-  - [su.centerText(text, y)](#sucentertexttext-y)
-  - [su.quickMenu(title, options)](#suquickmenutitle-options)
-  - [su.waitForKey(message)](#suwaitforkeymessage)
-  - [su.confirmationPrompt(message)](#suconfirmationpromptmessage)
-  - [su.countdownTimer(seconds, message)](#sucountdowntimerseconds-message)
-  - [su.quickReadFile(path)](#suquickreadfilepath)
-  - [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
-  - [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
-  - [su.calcTextScale(scale)](#sucalctextscalescale)
-  - [su.randomFloat(float, float2, decimals)](#surandomfloatfloat-float2-decimals)
-  - [su.roundDownFloat(float, decimals)](#surounddownfloatfloat-decimals)
-  - [su.chance(percentage)](#suchancepercentage)
-  - [su.formatInt(num)](#suformatintnum)
-  - [su.factorial(num)](#sufactorialnum)
+## Table of Contents <!-- omit from toc -->
+- [su.decimalToHexadecimal(number)](#sudecimaltohexadecimalnumber)
+- [su.decimalToBinary(number)](#sudecimaltobinarynumber)
+- [su.clear(x, y)](#suclearx-y)
+- [su.overwriteLine(text, y)](#suoverwritelinetext-y)
+- [su.centerText(text, y)](#sucentertexttext-y)
+- [su.quickMenu(title, options)](#suquickmenutitle-options)
+- [su.waitForKey(message)](#suwaitforkeymessage)
+- [su.confirmationPrompt(message)](#suconfirmationpromptmessage)
+- [su.countdownTimer(seconds, message)](#sucountdowntimerseconds-message)
+- [su.quickReadFile(path)](#suquickreadfilepath)
+- [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
+- [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
+- [su.calcTextScale(scale)](#sucalctextscalescale)
+- [su.randomFloat(float, float2, decimals)](#surandomfloatfloat-float2-decimals)
+- [su.roundDownFloat(float, decimals)](#surounddownfloatfloat-decimals)
+- [su.chance(percentage)](#suchancepercentage)
+- [su.formatInt(num)](#suformatintnum)
+- [su.factorial(num)](#sufactorialnum)
 
 ## su.decimalToHexadecimal(number)
 Converts a decimal number to hexadecimal
