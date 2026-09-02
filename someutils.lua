@@ -88,7 +88,8 @@ local function quickMenu(title, options)
         local num = tonumber(character)
         
         if num and num >= 1 and num <= #options then
-            return options[num]
+ --           print(num)
+            return num
         end
     end
 end
@@ -114,13 +115,12 @@ end
 ---@param message string?
 local function countdownTimer(seconds, message)
     term.write(message or "Resuming in ")
-    i = seconds
     sleep(0.25)
-    while i >= 0 do
+    for i = seconds, 1, -1 do
         term.write(i .. "... ")
-        i = i - 1
         sleep(1)
     end
+    print("\n")
 end
 --file stuff
 ---@param path string
@@ -224,6 +224,19 @@ local function formatInt(num)
     end
     return formattedNum
 end
+---@param num number
+---@return number
+---Returns the factorial of num
+local function factorial(num)
+    if num == 1 then
+        return 1
+    end
+    local retnum = 1
+    for i = num, 1, -1 do
+        retnum = retnum * i
+    end
+    return retnum
+end
 
 -- made it more beautiful
 return {
@@ -243,5 +256,6 @@ return {
     quickMenu = quickMenu, 
     waitForKey = waitForKey, 
     confirmationPrompt = confirmationPrompt, 
-    countdownTimer = countdownTimer
+    countdownTimer = countdownTimer,
+    factorial = factorial
 }
