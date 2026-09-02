@@ -4,7 +4,7 @@ To install someutils, run `wget https://raw.githubusercontent.com/GlitchGod42/so
 
 To install the someutils example, run `wget https://raw.githubusercontent.com/GlitchGod42/someutils-cc/refs/heads/main/someutilstest.lua someutilstest.lua`
 
-
+###### also i suck at making documentation
 
 
 # Someutils documentation
@@ -12,24 +12,28 @@ To install the someutils example, run `wget https://raw.githubusercontent.com/Gl
 a library that has a bunch of random stuff... because WHY NOT!
 
 ## Table of Contents
-- [su.decimalToHexadecimal(number)](#sudecimaltohexadecimalnumber)
-- [su.decimalToBinary(number)](#sudecimaltobinarynumber)
-- [su.clear(x, y)](#suclearx-y)
-- [su.overwriteLine(text, y)](#suoverwritelinetext-y)
-- [su.centerText(text, y)](#sucentertexttext-y)
-- [su.quickMenu(title, options)](#suquickmenutitle-options)
-- [su.waitForKey(message)](#suwaitforkeymessage)
-- [su.confirmationPrompt(message)](#suconfirmationpromptmessage)
-- [su.countdownTimer(seconds, message)](#sucountdowntimerseconds-message)
-- [su.quickReadFile(path)](#suquickreadfilepath)
-- [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
-- [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
-- [su.calcTextScale(scale)](#sucalctextscalescale)
-- [su.randomFloat(float, float2, decimals)](#surandomfloatfloat-float2-decimals)
-- [su.roundDownFloat(float, decimals)](#surounddownfloatfloat-decimals)
-- [su.chance(percentage)](#suchancepercentage)
-- [su.formatInt(num)](#suformatintnum)
-
+- [How to install](#how-to-install)
+        - [also i suck at making documentation](#also-i-suck-at-making-documentation)
+- [Someutils documentation](#someutils-documentation)
+  - [Table of Contents](#table-of-contents)
+  - [su.decimalToHexadecimal(number)](#sudecimaltohexadecimalnumber)
+  - [su.decimalToBinary(number)](#sudecimaltobinarynumber)
+  - [su.clear(x, y)](#suclearx-y)
+  - [su.overwriteLine(text, y)](#suoverwritelinetext-y)
+  - [su.centerText(text, y)](#sucentertexttext-y)
+  - [su.quickMenu(title, options)](#suquickmenutitle-options)
+  - [su.waitForKey(message)](#suwaitforkeymessage)
+  - [su.confirmationPrompt(message)](#suconfirmationpromptmessage)
+  - [su.countdownTimer(seconds, message)](#sucountdowntimerseconds-message)
+  - [su.quickReadFile(path)](#suquickreadfilepath)
+  - [su.quickWriteFile(path, content)](#suquickwritefilepath-content)
+  - [su.quickAppendFile(path, content)](#suquickappendfilepath-content)
+  - [su.calcTextScale(scale)](#sucalctextscalescale)
+  - [su.randomFloat(float, float2, decimals)](#surandomfloatfloat-float2-decimals)
+  - [su.roundDownFloat(float, decimals)](#surounddownfloatfloat-decimals)
+  - [su.chance(percentage)](#suchancepercentage)
+  - [su.formatInt(num)](#suformatintnum)
+  - [su.factorial(num)](#sufactorialnum)
 
 ## su.decimalToHexadecimal(number)
 Converts a decimal number to hexadecimal
@@ -242,3 +246,15 @@ Formats a number to look good
 **Returns**
 
 1. **formattedNum : string** The formatted number
+
+## su.factorial(num)
+
+Gives the factorial of *num*
+
+**Parameters**
+
+1. **num : number** The number to give factorial of like 5! when *num* is 5
+
+**Returns**
+
+1. **factorial : number** The factorial of *num*
