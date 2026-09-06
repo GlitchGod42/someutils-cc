@@ -237,6 +237,14 @@ local function factorial(num)
     end
     return retnum
 end
+---@param num number
+---@param bits number
+---@return number|nil
+local function toUnsigned(num, bits)
+    if not bits or bits < 2 then return nil end
+    max = 2 ^ bits or 2 ^ 8
+    return num % max
+end
 
 -- made it more beautiful
 return {
@@ -257,5 +265,6 @@ return {
     waitForKey = waitForKey, 
     confirmationPrompt = confirmationPrompt, 
     countdownTimer = countdownTimer,
-    factorial = factorial
+    factorial = factorial,
+    toUnsigned = toUnsigned
 }

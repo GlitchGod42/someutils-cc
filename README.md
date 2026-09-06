@@ -30,6 +30,7 @@ a library that has a bunch of random stuff... because WHY NOT!
 - [su.chance(percentage)](#suchancepercentage)
 - [su.formatInt(num)](#suformatintnum)
 - [su.factorial(num)](#sufactorialnum)
+- [su.toUnsigned(num, bits)](#sutounsignednum-bits)
 
 ## su.decimalToHexadecimal(number)
 Converts a decimal number to hexadecimal
@@ -129,9 +130,9 @@ If message is nil then the message will default to "Press any key to continue...
 
 ## su.confirmationPrompt(message)
 
-Its a confirmation prompt what did you expect just look at the function
+Its a confirmation prompt what did you expect just look at the function name
 
-If message is nil then the message will default to "Are you sure?"
+If `message` is nil then the message will default to "Are you sure?"
 
 **Parameters**
 
@@ -245,12 +246,24 @@ Formats a number to look good
 
 ## su.factorial(num)
 
-Gives the factorial of *num*
+Gives the factorial of `num`
 
 **Parameters**
 
-1. **num : number** The number to give factorial of like 5! when *num* is 5
+1. **num : number** The number to give factorial of like 5! when `num` is 5
 
 **Returns**
 
-1. **factorial : number** The factorial of *num*
+1. **factorial : number** The factorial of `num`
+
+## su.toUnsigned(num, bits)
+
+Caps `num` as if it was a `bits` bit int
+
+if `bits` is nil then it will default to a 8 bit int
+
+**Parameters**
+
+1. **num : number** The number to cap
+
+2. ***bits : num*** The integer that you want it to be
