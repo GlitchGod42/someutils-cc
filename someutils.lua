@@ -246,6 +246,19 @@ local function toUnsigned(num, bits)
     return num % max
 end
 
+---@param length number
+---@return table
+--- Makes a table of length that is "zero indexed"
+local function bytearray(length, contains)
+    retarray = {}
+    for i=0,length-1 do
+        retarray[i] = contains
+        if i%200==0 then
+            sleep()
+        end
+    end
+    return retarray
+end
 -- made it more beautiful
 return {
     decimalToHexadecimal = decimalToHexadecimal, 
@@ -266,5 +279,6 @@ return {
     confirmationPrompt = confirmationPrompt, 
     countdownTimer = countdownTimer,
     factorial = factorial,
-    toUnsigned = toUnsigned
+    toUnsigned = toUnsigned,
+    bytearray = bytearray
 }

@@ -31,6 +31,7 @@ a library that has a bunch of random stuff... because WHY NOT!
 - [su.formatInt(num)](#suformatintnum)
 - [su.factorial(num)](#sufactorialnum)
 - [su.toUnsigned(num, bits)](#sutounsignednum-bits)
+- [su.bytearray(length, contains)](#subytearraylength-contains)
 
 ## su.decimalToHexadecimal(number)
 Converts a decimal number to hexadecimal
@@ -267,3 +268,17 @@ if `bits` is nil then it will default to a 8 bit int
 1. **num : number** The number to cap
 
 2. ***bits : num*** The integer that you want it to be
+
+## su.bytearray(length, contains)
+
+Makes an table of `length` containing `contains` and the table is "zero indexed"
+
+**Parameters**
+
+1. **length : number** The length of the table
+
+2. **contains : any** What to insert into the table
+
+**Returns**
+
+1. **table : table** The table... what did you expect brah
