@@ -88,7 +88,6 @@ local function quickMenu(title, options)
         local num = tonumber(character)
         
         if num and num >= 1 and num <= #options then
- --           print(num)
             return num
         end
     end
